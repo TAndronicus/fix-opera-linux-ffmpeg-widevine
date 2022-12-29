@@ -65,10 +65,10 @@ fi
 ##Widevine
 if $FIX_WIDEVINE;  then
 	wget -q --inet4-only --show-progress "$WIDEVINE_URL" -O "$TEMP_DIR/opera-fix/widevine.zip"
-	if [ $? -ne 0 ]; then
-		printf 'Failed to download Widevine CDM. Check your internet connection or try later\n'
-		exit 1
-	fi
+#	if [ $? -ne 0 ]; then
+#		printf 'Failed to download Widevine CDM. Check your internet connection or try later\n'
+#		exit 1
+#	fi
 fi
 
 #Extracting files
